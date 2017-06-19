@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <h2>创建javascript对象</h2>
+	<p id="demo"></p>
+	<script>
+    var person=
+	{
+		firstName:"john",
+		lastName:"doe",
+	    id:5566,
+		fullName:function()
+		{
+			return this.firstName+" "+this.lastName;
+		}
+	};
+	document.getElementById("demo").innerHTML=person.fullName();
+	</script>
+	
+</body>
+</html>
